@@ -12,3 +12,23 @@
    margin: 8px;
  }
   }
+
+body {
+padding: 50px 0;
+}
+  .wrapper{
+    margin: 0 auto;
+  
+  }
+.sort svg{
+  transform: rotate(180deg);
+}
+.sort svg.rotated{
+  transform: rotate(0);
+}
+
+
+.pizza-block ul li.disabled{
+opacity: 0.4;
+pointer-events: none;
+}

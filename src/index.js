@@ -1,15 +1,23 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import { render } from "react-dom";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
 //import './scss/app.scss';
 import './App.css'
 import App from './App';
 
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <>
-    <App />
-  </>
-);
+render(
+  <BrowserRouter>
+    {/* <Routes>
+      <Route exact path="/" element={<App />} ></Route>
 
+    </Routes> */}
+    <App />
+  </BrowserRouter>,
+  document.getElementById("root")
+);
 
